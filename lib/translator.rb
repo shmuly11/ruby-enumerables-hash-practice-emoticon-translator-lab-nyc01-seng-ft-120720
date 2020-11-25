@@ -47,7 +47,7 @@ end
   
   # code goes here
   
-end
+#end
 
 def get_japanese_emoticon(file, emoticon)
   list1 =  load_library(file)
