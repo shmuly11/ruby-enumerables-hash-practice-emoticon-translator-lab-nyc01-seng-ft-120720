@@ -51,6 +51,7 @@ end
 
 def get_japanese_emoticon(file, emoticon)
   list1 =  load_library(file)
+  binding.pry
    if list1.each { |name, emoticons| emoticons[:english] == emoticon}
      return emoticons[:japanese].join
   # if  emoticons.any? { |lang, symbol| symbol == emoticon }
