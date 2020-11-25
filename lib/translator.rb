@@ -43,7 +43,7 @@ def get_english_meaning(file, emoticon)
   englishMeaning = (tempHash.select { |k,v| v[:japanese] == emoticon}).keys.join
   tempHash.include?(englishMeaning) ? englishMeaning : "Sorry, that emoticon was not found"
 end
-  end
+ # end
   
   # code goes here
   
