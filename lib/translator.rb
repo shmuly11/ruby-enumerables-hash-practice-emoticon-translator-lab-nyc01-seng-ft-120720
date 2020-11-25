@@ -46,23 +46,20 @@ def get_english_meaning(file, emoticon)
  # binding.pry
 end
  # end
-  
   # code goes here
-  
 #end
 
 def get_japanese_emoticon(file, emoticon)
   list1 =  load_library(file)
- 
- list1.each do |name, emoticons|
-   if  emoticons.any? { |lang, symbol| symbol == emoticon }
-     
-     return lang.values[1]
+   if list1.each { |name, emoticons| emoticons[:english] == emoticon}
+     return emoticons[:japanese].join
+  # if  emoticons.any? { |lang, symbol| symbol == emoticon }
+   #  return lang.values[1]
     # binding.pry
    end
    
  end
+#jap = (list1.select { |k, v| v[:english] == emoticon}).
   # code goes here
+  return "Sorry, that emoticon was not found"
 end
-#binding.pry
-#load_library(YAML.load_file('./lib/emoticons.yml'))
