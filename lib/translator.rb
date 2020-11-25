@@ -43,7 +43,7 @@ def get_english_meaning(file, emoticon)
   englishMeaning = (tempHash.select { |k,v| v[:japanese] == emoticon}).keys.join
   #binding.pry
   tempHash.include?(englishMeaning) ? englishMeaning : "Sorry, that emoticon was not found"
-  binding.pry
+ # binding.pry
 end
  # end
   
@@ -58,7 +58,7 @@ def get_japanese_emoticon(file, emoticon)
    if  emoticons.any? { |lang, symbol| symbol == emoticon }
      
      return lang.values[1]
-     binding.pry
+    # binding.pry
    end
    
  end
