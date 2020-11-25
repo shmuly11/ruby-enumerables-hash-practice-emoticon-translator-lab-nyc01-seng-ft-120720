@@ -58,7 +58,7 @@ def get_japanese_emoticon(file, emoticon)
     # binding.pry
    end
    
- end
+  
 #jap = (list1.select { |k, v| v[:english] == emoticon}).
   # code goes here
   return "Sorry, that emoticon was not found"
